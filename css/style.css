@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background:
+        url("../images/bg-pattern-top.svg") left -100px top -400px no-repeat,
+        url("../images/bg-pattern-bottom.svg") right -150px bottom calc(100% - 400px) no-repeat hsl(185, 75%, 39%);
+}
+
+
+/* Card */
+
+.card {
+    width: 350px;
+    max-width: 350px;
+    height: 420px;
+    max-height: 420px;
+    overflow: hidden;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+
+    border-radius: 20px;
+
+    background: url("../images/bg-pattern-card.svg") top left no-repeat #fff;
+}
+
+.intro {
+    padding: 30px;
+
+    border-bottom: 2px solid #eee;
+}
+
+.card-image {
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+    margin-top: 100px;
+}
+
+.intro-title {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.intro-title span {
+    font-size: 18px;
+    color: #b1b1b1;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.intro-subtitle {
+    font-size: 15px;
+    color: #b1b1b1;
+}
+
+
+/* Social */
+
+.social-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row {
+    margin-top: 35px;
+    margin-right: 45px;
+}
+
+.row:nth-child(3) {
+    margin-right: 0;
+}
+
+.social-title {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+.social-subtitle {
+    font-size: 13px;
+    color: #b1b1b1;
+}
+
+
+
+@media screen and (max-width: 1110px) {
+    body {
+        background:
+            url("../images/bg-pattern-top.svg") left -700px top -500px no-repeat,
+            url("../images/bg-pattern-bottom.svg") right -650px top 400px no-repeat hsl(185, 75%, 39%);
+    }
+
+    .card {
+        width: 300px;
+        max-width: 300px;
+        height: 390px;
+        max-height: 370px;
+        overflow: hidden;
+
+    }
+
+    .intro {
+    padding: 15px;
+    }
+
+    .row {
+    margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
